@@ -11,6 +11,8 @@ public class WaveSpawner : MonoBehaviour {
 	public float timeBetweenWaves = 5f;
 	private float countdown = 2f;
 
+	public Text waveCountdownText;
+
 	private int waveIndex = 0;
 
 	void Update ()
@@ -22,6 +24,8 @@ public class WaveSpawner : MonoBehaviour {
 		}
 
 		countdown -= Time.deltaTime;
+
+		waveCountdownText.text = Mathf.Round(countdown).ToString();
 	}
 
 	IEnumerator SpawnWave ()
