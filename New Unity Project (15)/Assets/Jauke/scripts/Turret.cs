@@ -5,14 +5,21 @@ using UnityEngine;
 public class Turret : MonoBehaviour
 {
     private Transform target;
-    public float range = 20f;
-    public Transform PartToRotate;
 
+    [Header("Attributes")]
+
+    public float range = 20f;
     public float fireRate = 1f;
     private float fireCountdown = 0f;
 
+    [Header("Unity Setup Fields")]
+
     public string enemyTag = "Enemy";
 
+    public Transform PartToRotate;
+
+    public GameObject bulletPrefab;
+    public Transform firePoint;
 
     // Start is called before the first frame update
     void Start()
@@ -68,7 +75,11 @@ public class Turret : MonoBehaviour
 
     void Shoot ()
     {
-        Debug.Log("SHOOT!");
+        GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        Bullet bullet = bulletGO.GetComponent<Bullet>(); 
+
+        if (bullet != null)
+            bullet.Seek(target);
     }
 
     void OnDrawGizmosSelected ()
