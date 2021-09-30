@@ -8,6 +8,8 @@ public class Turret : MonoBehaviour
     public float range = 20f;
     public Transform PartToRotate;
 
+    public float fireRate = 1f;
+    private float fireCountdown = 0f;
 
     public string enemyTag = "Enemy";
 
@@ -54,6 +56,19 @@ public class Turret : MonoBehaviour
         Vector3 rotation = lookRotation.eulerAngles;
         PartToRotate.rotation = Quaternion.Euler (0f, rotation.y, 0f);
 
+        if (fireCountdown <= 0f)
+        {
+            Shoot();
+            fireCountdown = 1f / fireRate;
+        }
+
+        fireCountdown -= Time.deltaTime;
+
+    }
+
+    void Shoot ()
+    {
+        Debug.Log("SHOOT!");
     }
 
     void OnDrawGizmosSelected ()
