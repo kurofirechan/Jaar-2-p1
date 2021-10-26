@@ -1,14 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
-
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Startgame : MonoBehaviour
-{
-    public void start()
-    {
-        SceneManager.LoadScene("game");
-    }
 
+public class Back : MonoBehaviour
+{
+    public void Returntomenu()
+    {
+        SceneManager.LoadScene("Main menu");
+    }
 }
