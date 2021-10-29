@@ -11,6 +11,7 @@ public class Turret : MonoBehaviour
     public float range = 20f;
     public float fireRate = 1f;
     private float fireCountdown = 0f;
+    public float damage;
 
     [Header("Unity Setup Fields")]
 
@@ -76,7 +77,8 @@ public class Turret : MonoBehaviour
     void Shoot ()
     {
         GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-        Bullet bullet = bulletGO.GetComponent<Bullet>(); 
+        Bullet bullet = bulletGO.GetComponent<Bullet>();
+        bullet.damage = damage;
 
         if (bullet != null)
             bullet.Seek(target);

@@ -9,9 +9,6 @@ EditorBuildSettings:
     path: Assets/Jauke/Scenes/Main Menu.unity
     guid: 52ad76556d60eaf42b362b594c6d94d5
   - enabled: 1
-    path: Assets/Jauke/Scenes/pause menu.unity
-    guid: bfc22629632c3d84d9e8e33f58cfce89
-  - enabled: 1
-    path: Assets/Jauke/Scenes/game.unity
-    guid: c1f00894da2776c418782485e19c3277
+    path: Assets/!Main folders/Scenes/Level 1.unity
+    guid: b79919653f1a3ba49bdee68c3a3e1067
   m_configObjects: {}
