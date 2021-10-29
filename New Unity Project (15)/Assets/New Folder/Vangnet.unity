@@ -6203,6 +6203,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3692349275388739770, guid: c528f0ee7f280404392aa8bf929fbd6a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bdf449a62bd68114fbd9f45c6acf52ae, type: 2}
     - target: {fileID: 4969012911913002594, guid: c528f0ee7f280404392aa8bf929fbd6a,
         type: 3}
       propertyPath: m_RootOrder
@@ -6272,11 +6277,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4016073211706738431, guid: 1bdd3332a5cc2ec4bb78b8e35e8410a0,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fb0ecd6e1f9839945899aefbed82125a, type: 2}
+    - target: {fileID: 5745015616296094569, guid: 1bdd3332a5cc2ec4bb78b8e35e8410a0,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bdf449a62bd68114fbd9f45c6acf52ae, type: 2}
     - target: {fileID: 6304918190926849877, guid: 1bdd3332a5cc2ec4bb78b8e35e8410a0,
         type: 3}
       propertyPath: m_Name
       value: train big
       objectReference: {fileID: 0}
+    - target: {fileID: 6488965522141207788, guid: 1bdd3332a5cc2ec4bb78b8e35e8410a0,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fb0ecd6e1f9839945899aefbed82125a, type: 2}
     - target: {fileID: 6644006939039088111, guid: 1bdd3332a5cc2ec4bb78b8e35e8410a0,
         type: 3}
       propertyPath: m_RootOrder
